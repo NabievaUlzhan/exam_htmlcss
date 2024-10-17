@@ -1,0 +1,17 @@
+@import './base/mixins.scss';
+@import './base/reset.scss';
+@import './base/vars.scss';
+@import './blocks/header.scss';
+@import './blocks/services.scss';
+@import './blocks/destinations.scss';
+@import './blocks/booking.scss';
+@import './blocks/feedback.scss';
+@import './blocks/logos.scss';
+@import './blocks/subscribe.scss';
+@import './blocks/footer.scss';
+
+
+.container{
+    margin: auto;
+    max-width: 1440px;
+}

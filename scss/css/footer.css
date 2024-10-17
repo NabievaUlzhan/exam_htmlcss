@@ -1,0 +1,25 @@
+.footer {
+  padding-left: 186px;
+}
+
+.footer__all {
+  width: 1617.945px;
+  height: 633.864px;
+}
+
+.footer__decore {
+  width: 478.945px;
+  height: 496.864px;
+  border-radius: 496.864px;
+  opacity: 0.8;
+  background: var(--d2, #D5AEE4);
+  filter: blur(75px);
+}
+
+.footer__all-label {
+  width: 207px;
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}/*# sourceMappingURL=footer.css.map */

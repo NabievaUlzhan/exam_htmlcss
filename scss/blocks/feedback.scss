@@ -1,0 +1,167 @@
+.feedback{
+    
+    padding-left: 186px;
+    padding-right: 89px;
+    @media screen and (max-width: 412px){
+        width: 412px;
+        padding-left: 15px;
+        padding-right: 0;
+    }
+}
+.feedback__all{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 1165px;
+    height: 356px;
+    margin-top: 200px;
+    @media screen and (max-width: 412px){
+        width: 412px;
+        flex-direction: column;
+        height: 600px;
+    }
+    p{
+        @include text($font-main-color, $font-family-main, 18px, normal, 600, normal, normal);
+    }
+    h2{
+        @include text($font-title-color, $font-family-title, 50px, normal, 700, normal, normal);
+        position: relative;
+        width: 409px;
+        margin-top: 8px;
+        @media screen and (max-width: 412px){
+            @include text($font-title-color, $font-family-title, 40px, normal, 700, normal, normal);
+        }
+    }
+}
+.feedback__all h2::after{
+    content: '';
+    background-image: url(../../images/feedback/num.svg);
+    width: 87px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 212px;
+    @media screen and (max-width: 412px){
+        top: 150px;
+    }
+}
+.feedback__all-opinion{
+    width: 669px;
+    height: 356px;
+    position: relative;
+    @media screen and (max-width: 412px){
+        width: 412px;
+    }
+    p{
+        width: 402px;
+        @include text($font-main-color, $font-family-main, 16px, normal, 500, 32px, normal);
+        @media screen and (max-width: 412px){
+            width: 310px;
+            height: auto;
+        }
+    }
+    h4{
+        @include text($font-main-color, $font-family-main, 18px, normal, 600, normal, normal);
+    }
+    h6{
+        @include text($font-main-color, $font-family-main, 14px, normal, 500, normal, normal);
+    }
+}
+.feedback__opinion-mike{
+    width: 541px;
+    height: 279px;
+    padding-top: 62px;
+    padding-left: 71px;
+    position: relative;
+    @media screen and (max-width: 412px){
+        width: 350px;
+        height: auto;
+        padding: 30px 20px;
+    }
+    h4{
+        margin-top: 34px;
+        margin-bottom: 5px;
+    }
+}
+.feedback__opinion-bg{
+    width: 504px;
+    height: 245px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: $font-button-color;
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+.feedback__all-opinion::before{
+    content: '';
+    background-image: url(../../images/feedback/mike.svg);
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media screen and (max-width: 412px){
+        z-index: 1;
+    }
+}
+
+.feedback__opinion-chris{
+    width: 502px;
+    height: 232px;
+    padding-top: 16px;
+    padding-left: 34px;
+    border-radius: 10px;
+    border: 2px solid $font-button-color;
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    right: 80px;
+    @media screen and (max-width: 412px){
+        width: 340px;
+        height: auto;
+        right: 0;
+        left: 50px;
+        padding: 16px 16px;
+    }
+    p{
+        width: 402px;
+        @include text($font-chris-color, $font-family-list, 16px, normal, 400, 32px, normal);
+        @media screen and (max-width: 412px) {
+            width: 300px;
+            height: auto;
+        }
+    }
+    h4{
+        margin-top: 44px;
+        margin-bottom: 6px;
+        @media screen and (max-width: 412px){
+            margin-top: 20px;
+        }
+    }
+}
+
+.feedback__opinion-pagination{
+    position: absolute;
+    right: 0;
+    bottom: 144px;
+    @media screen and (max-width: 412px){
+        // transform: rotate(180deg);
+        // bottom: 0;
+        // right: 100px;
+        display: none;
+    }
+}
+.feedback__media-pagination{
+    display: none;
+    @media screen and (max-width: 412px){
+        position: absolute;
+        transform: rotate(90deg);
+        transition: 1s;
+        // bottom: 0;
+        right: 200px;
+        display: flex;
+    }
+}

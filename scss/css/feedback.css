@@ -1,0 +1,16 @@
+.feedback {
+  height: 356px;
+  margin-top: 200px;
+  padding-left: 186px;
+  padding-right: 89px;
+}
+
+.feedback__all {
+  width: 1165px;
+  height: 356px;
+}
+
+.feedback__all-opinion {
+  display: flex;
+  justify-content: flex-end;
+}/*# sourceMappingURL=feedback.css.map */

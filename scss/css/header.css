@@ -1,0 +1,19 @@
+.header__all-top {
+  width: 1160.58px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  position: relative;
+}
+
+.list::before {
+  content: "";
+  background-image: url(../../images/header/Logo.svg);
+  width: 114.912px;
+  height: 33.994px;
+  position: absolute;
+}
+/*# sourceMappingURL=header.css.map */

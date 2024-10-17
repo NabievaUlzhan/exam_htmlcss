@@ -1,0 +1,159 @@
+.footer{
+    padding-left: 186px;
+    @media screen and (max-width: 412px) {
+        width: 412px;
+        height: 1020px;
+        padding-left: 15px;
+    }
+}
+.footer__all{
+    width: 1617.945px;
+    height: 633.864px;
+    position: relative;
+    @media screen and (max-width: 412px) {
+        width: 412px;
+        height: auto;
+    }
+}
+.footer__last{
+    margin-left: 430px;
+    margin-top: 84px;
+    @include text($font-main-color, $font-family-main, 14px, normal, 500, 124.5%, normal);
+    @media screen and (max-width: 412px) {
+        margin-left: 0;
+    }
+}
+.footer__decore{
+    width: 478.945px;
+    height: 496.864px;
+    border-radius: 496.864px;
+    opacity: 0.8;
+    background: var(--d2, #D5AEE4);
+    filter: blur(75px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.footer__all-label{
+    width: 207px;
+    height: 133px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    @media screen and (max-width: 412px) {
+        margin-bottom: 50px;
+    }
+    a{
+        @include text($font-main-title-color, $font-family-main, 44px, normal, 500, normal, normal);
+    }
+    p{
+        height: 48px;
+        width: 207;
+        @include text($font-main-color, $font-family-main, 13px, normal, 500, 124.5%, normal);
+    }
+}
+.footer__all-nav{
+    width: 474px;
+    height: 153px;
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+    left: 83px;
+    @media screen and (max-width: 412px) {
+        width: 412px;
+        height: 550px;
+        flex-direction: column;
+        left: 0;
+    }
+}
+.footer__nav-column{
+    height: 151px;
+    display: flex;
+    flex-direction: column;
+    h5{
+        @include text($font-table-color, $font-family-main, 21px, normal, 700, 124.5%, normal);
+        margin-bottom: 21px;
+    }
+    a{
+        @include text($font-main-color, $font-family-main, 18px, normal, 500, 124.5%, normal);
+        margin-top: 13px;
+    }
+}
+.column__width1{
+    width: 108px;
+}
+.column__width2{
+    width: 89px;
+}
+.column__width3{
+    width: 114px;
+}
+
+.footer__all-apps{
+    width: 214px;
+    height: 147px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 21px;
+    left: 164px;
+    @media screen and (max-width: 412px) {
+        width: 214px;
+        height: 160px;
+        left: 0;
+        top: 50px;
+    }
+}
+.footer__apps-company{
+    width: 214px;
+    height: 76px;
+    @media screen and (max-width: 412px) {
+        width: 214px;
+        height: 120px;
+    }
+    p{
+        @include text($font-main-color, $font-family-main, 20px, normal, 500, 124.5%, 0.1px);
+        @media screen and (max-width: 412px) {
+            margin-bottom: 10px;
+        }
+    }
+}
+.footer__apps-img{
+    width: 177px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__insta{
+    background-image: url(../../images/footer/insta.svg);
+}
+.play__market{
+    width: 100px;
+    height: 35px;
+    border-radius: 17.5px;
+    background: $font-table-color;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    @media screen and (max-width: 412px) {
+        width: 100px;
+        height: 35px;
+        margin-bottom: 8px;
+    }
+}
+.google__play{
+    margin-right: 5.24px;
+}
+.hover__color:hover{
+    color: #F1A501;
+}
+.play__store{
+    margin-top: 16px;
+    width: 100px;
+    height: 35px;
+}

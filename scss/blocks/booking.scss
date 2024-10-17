@@ -1,0 +1,254 @@
+.booking{
+    height: 492px;
+    padding-left: 186px;
+    padding-right: 140px;
+    @media screen and (max-width: 412px){
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.booking__all{
+    width: 1114px;
+    height: 492px;
+    margin-top: 186px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 412px){
+        height: auto;
+        flex-direction: column;
+    }
+    h3{
+        margin-bottom: 15px;
+        @include text($font-main-color, $font-family-main, 18px, normal, 600, normal, normal);
+    }
+    h2{
+        width: 511px;
+        height: 130px;
+        margin-bottom: 31px;
+        @include text($font-title-color, $font-family-title, 50px, normal, 700, normal, normal);
+        @media screen and (max-width: 412px){
+            width: 390px;
+            @include text($font-title-color, $font-family-title, 40px, normal, 700, normal, normal);
+        }
+    }
+}
+.booking__all-text{
+    @media screen and (max-width: 412px){
+        padding-left: 15px;
+    }
+}
+.booking__all-steps {
+    width: 395px;
+    height: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.booking__all-step {
+    width: 395px;
+    height: 64px;
+    padding-left: 68px;
+    position: relative;
+    h6{
+        @include text($font-main-color, $font-family-main, 16px, normal, 700, normal, normal);
+    }
+    p{
+        width: 327px;
+        height: 40px;
+        @include text($font-main-color, $font-family-main, 16px, normal, 400, 124.5%, normal);
+        @media screen and (max-width: 412px){
+            width: 300px;
+            height: auto;
+        }
+    }
+}
+.booking__all-step:hover{
+    transform: scale(1.1);
+}
+
+.booking__step-before1::before{
+    content: '';
+    background-image: url(../../images/booking/choose.svg);
+    width: 47px;
+    height: 48px;
+    position: absolute;
+    left: 0;
+}
+.booking__step-before2::before{
+    content: '';
+    background-image: url(../../images/booking/make.svg);
+    width: 47px;
+    height: 48px;
+    position: absolute;
+    left: 0;
+}
+.booking__step-before3::before{
+    content: '';
+    background-image: url(../../images/booking/reach.svg);
+    width: 47px;
+    height: 48px;
+    position: absolute;
+    left: 0;
+}
+
+.booking__all-image{
+    width: 485px;
+    height: 459px;
+    position: relative;
+    top: 19px;
+    bottom: 14px;
+    @media screen and (max-width: 412px){
+        width: 400px;
+        padding-left: 10px;
+    }
+}
+.booking__img-elipse{
+    width: 354px;
+    height: 367px;
+    border-radius: 367px;
+    opacity: 0.8;
+    background: #59B1E6;
+    filter: blur(75px);
+    position: absolute;
+    z-index: -1;
+    left: 60px;
+    top: 0;
+}
+
+.booking__img-text{
+    width: 485px;
+    height: 400px;
+    position: relative;
+    top: 59px;
+    @media screen and (max-width: 412px){
+        width: 400px;
+        margin: auto;
+    }
+}
+.booking__img-greece{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 20px 24px 31px 25px;
+    border-radius: 26px;
+    background: $font-button-color;
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    width: 370px;
+    height: 400px;
+    h4{
+        margin-top: 26px;
+        margin-bottom: 13px;
+        @include text($font-table-color, $font-family-main, 18px, normal, 500, 124.5%, 0.27px);
+    }
+    p{
+        display: inline;
+        @include text($font-trip-color, $font-family-main, 16px, normal, 500, 124.5%, -0.08px);
+    }
+}
+.booking__img-line{
+    margin-left: 3px;
+    margin-right: 13px;
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background: $font-trip-color;
+}
+.booking__img-num{
+    @include text($font-trip-color, $font-family-main, 16px, normal, 500, 124.5%, -0.32px);
+    position: relative;
+    margin-left: 31px;
+}
+.booking__img-num::before{
+    content: '';
+    background-image: url(../../images/booking/building\ 1.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -30px;
+}
+.booking__img-num::after{
+    content: '';
+    background-image: url(../../images/booking/like.svg);
+    width: 20px;
+    height: 18.585px;
+    position: absolute;
+    left: 269px;
+}
+
+.booking__img-rome{
+    width: 263px;
+    height: 129px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 219px;
+    padding-top: 16px;
+    padding-left: 82px;
+    background: $font-button-color;
+    border-radius: 18px;
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    h6{
+        @include text($font-trip-color, $font-family-main, 14px, normal, 500, 124.5%, -0.49px);
+    }
+    h4{
+        margin-top: 6px;
+        margin-bottom: 14px;
+        @include text($font-table-color, $font-family-main, 18px, normal, 500, 124.5%, -0.27px);
+    }
+    p{
+        position: relative;
+        margin-bottom: 10px;
+        @include text($font-rome-color, $font-family-main, 14px, normal, 500, 124.5%, -0.77px);
+        span{
+            @include text($font-table-color, $font-family-main, 14px, normal, 500, 124.5%, -0.77px);
+        }
+    }
+}
+
+.booking__img-rome p::after{
+    content: '';
+    background-image: url(../../images/booking/level.svg);
+    width: 156px;
+    height: 5px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+}
+.booking__img-rome h6::before{
+    content: '';
+    background-image: url(../../images/booking/Mask\ Group.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    z-index: 1;
+    top: 18px;
+}
+// .booking__img-rome h6::before{
+//     content: '';
+//     background-image: url(../../images/booking/image\ 32.png);
+//     width: 74px;
+//     height: 66px;
+//     position: absolute;
+//     left: 0;
+//     z-index: 0;
+// }
+.booking__img-options{
+    @extend %flex;
+    flex-direction: row;
+    margin-left: 3px;
+    margin-top: 21px;
+    margin-bottom: 30px;
+    width: 139px;
+    height: 36px;
+}
+.options__bg{
+    width: 36px;
+    height: 36px;
+    background-image: url(../../images/booking/Ellipse\ 4.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
